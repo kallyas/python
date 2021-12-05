@@ -1,13 +1,3 @@
-# create selection sort algorithm
-
-def selection_sort(arr):
-    for i in range(len(arr)):
-        min_index = i
-        for j in range(i+1, len(arr)):
-            if arr[j] < arr[min_index]:
-                min_index = j
-        arr[i], arr[min_index] = arr[min_index], arr[i]
-    return arr
 
 def selection_sort_recursive(arr):
     count = 0
@@ -30,6 +20,5 @@ def selection_sort_recursive(arr):
 
 if __name__ == "__main__":
     arr = [1, 4, 2, 5, 3, -8, -2, -1, -3, -4, -5, -6, -7, -9, -10]
-    # print(selection_sort(arr))
     print(selection_sort_recursive(arr))
    
